@@ -3,15 +3,13 @@
 
 import io
 import os
-import sys
-from shutil import rmtree
 
-from setuptools import find_packages, setup, Command
+from setuptools import find_packages, setup
 
 # Package meta-data.
 NAME = 'wordgame'
 DESCRIPTION = 'Example wordgame used to demonstrate unit testing'
-URL = ''
+URL = 'https://github.com/philip-lee-ons/testing_example.git'
 EMAIL = 'philip.l.lee@ons.gov.uk'
 AUTHOR = 'Philip Lee'
 REQUIRES_PYTHON = '>=3.6.0'
