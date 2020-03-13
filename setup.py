@@ -79,5 +79,5 @@ setup(
         'Private :: Do Not Upload'  # PyPI will reject as doesn't recognise the classifier
     ],
     setup_requires=['pytest-runner'],
-    tests_require=['pytest']
+    tests_require=['pytest', 'hypothesis']
 )
