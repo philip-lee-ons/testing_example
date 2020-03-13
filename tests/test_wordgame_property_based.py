@@ -16,7 +16,7 @@ Performing `reverse` twice should always recover the original ordering:
 
 This is our invariant.
 
-See `Hypothesis <https://hypothesis.readthedocs.io/en/latest/>` for the details
+See `Hypothesis <https://hypothesis.readthedocs.io/en/latest/>`_ for the details
 of the `hypothesis` library used in these tests
 (as well as more information on property based testing in general).
 """
@@ -44,8 +44,10 @@ def test_score_indepent_of_order(word):
     assert text_score == shuffled_score
 
 
-@given(letter=st.from_regex(r"[A-Za-z]", fullmatch=True),
-       repeat=st.integers(min_value=1, max_value=100))
+@given(
+    letter=st.from_regex(r"[A-Za-z]", fullmatch=True),
+    repeat=st.integers(min_value=1, max_value=100),
+)
 def test_repeated_letters_multiplies_score(letter, repeat):
     # Given
     word = letter * repeat
